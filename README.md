@@ -66,4 +66,4 @@ docker pull localhost:5000/oiio/python3.6.12:v1
 docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T localhost:5000/oiio/python3.6.12:v1 /bin/bash
 docker start 3de_oiio
 ```
-You can now access the shared mount to convert images..
+You can now access the shared mount to convert images..:grin::grin:
