@@ -36,6 +36,22 @@ include following lines
         "insecure-registries": [ "0.0.0.0:5000" ]
 }
 ```
-#### 
+#### Run Commands to restart docker and docker service to affect the updates
+```
+systemctl daemon-reload
+service docker restart
+systemctl enable docker.service
+systemctl enable containerd.service
+```
+
+#### Install Local registry in the server
+create the folder /Shares/T/tools/docker/images
+```
+docker run -d -e REGISTRY_STORAGE_DELETE_ENABLED=true -e REGISTRY_HTTP_ADDR=0.0.0.0:5000 -p 5000:5000 --restart=always --name registry -v /Shares/T/tools/docker/images:/var/lib/registry registry:2
+```
+Now docker registry created with the volume mount /Shares/T/tools/docker/images
+
+#### Check the images and containers
+```docker images ``` ```docker ps -a``` 
 
 
