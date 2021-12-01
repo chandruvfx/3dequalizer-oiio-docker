@@ -6,7 +6,7 @@ An 3dequalizer oiio docker utility tool used to convert dpx and exr to jpg's. Lo
  
 The readme section splitted into two parts
 1. The below section covers instructions of docker image configration of oiio. 
-2. Refer ```convert.py``` how the oiio container configured to make the conversion process happen. 
+2. Refer ```convert.py``` how the oiio container configured inside 3dequalizer. 
 ___
      
 Steps to create a local docker registry in the server and install OpenImageIO-Docker. 
