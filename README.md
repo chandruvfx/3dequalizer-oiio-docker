@@ -11,10 +11,10 @@ curl -sSL https://get.docker.com | sh
 ```
 docker pull centos:7
 ```
-#### Create a container by running the docker images
-```
-docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T centos /bin/bash        (/Shares/T is a server path . we mount that as a volume)
-```
+#### Create a container by running the docker images    
+
+```docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T centos /bin/bash ``` (/Shares/T is a server path . we mount that as a volume)
+
 #### Enter into the docker container by starting interactively
 ```
 docker start -ai 3de_oiio
@@ -23,8 +23,19 @@ docker start -ai 3de_oiio
 
 ### Create a local registry in a absolute server path 
 #### Create name server
-```vim /etc/resolv.conf```
-add 
+```vim /etc/resolv.conf``` and append line at last  ```nameserver 0.0.0.0```
 
+#### Change docker deamon config
+Open
+```
+/etc/docker/daemon.json
+```
+include following lines
+```
+{
+        "insecure-registries": [ "0.0.0.0:5000" ]
+}
+```
+#### 
 
 
