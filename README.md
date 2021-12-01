@@ -61,7 +61,7 @@ Now docker registry created with the volume mount /Shares/T/tools/docker/images
 #### Once oiio docker image created from the container push it to the local registry 
 ```docker push localhost:5000/oiio/python3.6.12:v1```
 
-#### Once oiio image pushed to local registry pull the newly created image.
+#### Apart from the local registry image delete all images. Then pull the newly created image.
 ```
 docker pull localhost:5000/oiio/python3.6.12:v1
 docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T localhost:5000/oiio/python3.6.12:v1 /bin/bash
