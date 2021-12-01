@@ -1,4 +1,4 @@
-# OpenImageIo-Docker
+# OpenImageIo-Docker :+1: :muscle:
 
 Steps to create a local docker registry in the server and install OpenImageIO-Docker. 
 
