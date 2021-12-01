@@ -54,4 +54,16 @@ Now docker registry created with the volume mount /Shares/T/tools/docker/images
 #### Check the images and containers
 ```docker images ``` ```docker ps -a``` 
 
+#### Create a OpenimageIo image by using the 3de_oiio container
+```docker commit <container_id> localhost:5000/oiio/python3.6.12:v1``` 
 
+#### Once oiio docker image created from the container push it to the local registry 
+```docker push localhost:5000/oiio/python3.6.12:v1```
+
+#### Once oiio image pushed to local registry pull the newly created image.
+```
+docker pull localhost:5000/oiio/python3.6.12:v1
+docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T localhost:5000/oiio/python3.6.12:v1 /bin/bash
+docker start 3de_oiio
+```
+You can now access the shared mount to convert images..
