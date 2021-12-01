@@ -20,6 +20,7 @@ docker pull centos:7
 docker start -ai 3de_oiio
 ```
 #### Build OpenImageIO as instructed into the ASWF documentation
+__
 
 ### Create a local registry in a absolute server path 
 #### Create name server
