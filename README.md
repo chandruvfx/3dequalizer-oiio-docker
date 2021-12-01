@@ -1,4 +1,4 @@
-# OpenImageIo-Docker :+1: :muscle:
+# 3dequalizer-OpenImageIo-Docker :+1: :muscle:
 
 
  
