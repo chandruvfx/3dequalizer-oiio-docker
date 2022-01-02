@@ -76,4 +76,4 @@ docker pull localhost:5000/oiio/python3.6.12:v1
 docker run -dit --name 3de_oiio -v /Shares/T:/Shares/T localhost:5000/oiio/python3.6.12:v1 /bin/bash
 docker start 3de_oiio
 ```
-This time oiio image docker pulled from the local registry not from the docker hub. You can now access the shared mount to convert images..:grin::grin:
+This time oiio image docker pulled from the local registry not from the docker hub. You can now access the shared mount to convert images..
