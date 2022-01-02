@@ -4,7 +4,7 @@
  
 An 3dequalizer oiio docker utility tool used to convert dpx and exr to jpg's. Loading dpx and exr image sequences directly into the background image made 3dequalizer heavy. This tool convert published shotgrid exr scans into jpg's and publish it into shotgrid again. Matchmovers load the lightwight images into 3dequalizer
 
-<ins>Video Demo of action of the tool </ins>
+<ins>Video Demo of action of the tool </ins>  :point_down: [Youtube Link]
 
 [![Demo](https://img.youtube.com/vi/tn0XgNoP_J0/0.jpg)](https://www.youtube.com/watch?v=tn0XgNoP_J0)
 
